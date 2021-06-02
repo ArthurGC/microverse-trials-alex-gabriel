@@ -27,7 +27,7 @@
             <header>Apple and Orange</header>
             <p>Sam's house has an apple tree and an orange tree that yield an abundance of fruit. Using the information
                 given below, determine the number of apples and oranges that land on Sam's house.</p>
-            <p><code>
+            <div class="code"><code>
                 function countApplesAndOranges(s, t, a, b, apples, oranges) {
                 let positionApples = [];
                 let positionOranges = [];
@@ -36,7 +36,7 @@
                 oranges.forEach( x => {if((x+b) >= s && (x+b) <= t) return positionOranges.push(x+b)});
                 console.log(positionApples.length);
                 console.log(positionOranges.length);
-            }</code></p>
+            }</code></div>
             <li> More... </li>
         </section>
         <section class="main-section" id="Breaking_best_and_worst_records">
@@ -45,7 +45,7 @@
                 tabulates the number of times she breaks her season record for most points and least points in a game.
                 Points scored in the first game establish her record for the season, and she begins counting from there.
             </p>
-            <p> <code>
+            <div class="code"> <code>
                 function breakingRecords(scores) {
                 let minScore = scores[0];
                 let maxScore = scores[0];
@@ -64,7 +64,7 @@
                 }       
                 return [countMax, countMin]
             }
-            </code></p>
+            </code></div>
             <li> More...</li>
 
         </section>
@@ -74,7 +74,7 @@
                 task is to determine which cat will reach the mouse first, assuming the mouse does not move and the cats
                 travel at equal speed. If the cats arrive at the same time, the mouse will be allowed to move and it
                 will escape while they fight.</p>
-            <p><code>
+            <div class="code"><code>
                 function catAndMouse(x, y, z) {
                     let A = Math.abs(z-x);
                     let B = Math.abs(z-y);
@@ -85,8 +85,8 @@
                     }else if (A < B) {
                         return 'Cat A'
                     }
-                }
-            </code></p>
+                } 
+            </code></div>
             <li> More... </li>
 
         </section>
@@ -97,12 +97,12 @@
                 that will increase their maximum jump height by unit for each dose. How many doses of the potion must
                 the character take to be able to jump all of the hurdles. If the character can already clear all of the
                 hurdles, return .</p>
-            <p><code>
+            <div class="code"><code>
                 function hurdleRace(k, height) {
                     let maxHeight = Math.max(...height);
                     return (maxHeight > k)? maxHeight-k: 0;
                 }
-            </code></p>
+            </code></div>
             <li>More... </li>
 
         </section>
