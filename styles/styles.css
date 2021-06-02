@@ -29,6 +29,11 @@ a{
     font-size: 1.4rem;
     padding: .8rem 0 .8rem 1rem ;
     text-decoration: none;
+	transition: color .3s ease-in-out;
+}
+a:hover{
+	color: rgb(1, 1, 150);
+	font-weight: bold;
 }
 .container{
     grid-column-start: 2;
@@ -44,6 +49,12 @@ a{
 header{
     padding: 1rem 0;
     font-size: 2rem;
+}
+.code{
+	margin: 1rem 0;
+	background: #eee;
+	padding: 1rem;
+	border-radius: .5rem;
 }
 
 
